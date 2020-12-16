@@ -115,3 +115,27 @@
   margin: 0 auto;
   margin-top: 3rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .job-btn {
+    font-size: 1rem;
+  }
+
+  .btn-container {
+    justify-content: inherit;
+    overflow-x: scroll;
+    height: 5rem;
+    border: 0.5px solid var(--clr-grey-5);
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    background: var(--clr-grey-9);
+  }
+
+  .section {
+    padding: 3rem 0 !important;
+  }
+
+  .job-desc {
+    column-gap: 0.5rem;
+  }
+}

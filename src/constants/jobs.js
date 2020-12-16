@@ -1,4 +1,4 @@
-export default [
+const jobs = [
   {
     key: 1,
     companyShortFrom: 'SCB, India',
@@ -165,3 +165,5 @@ export default [
     ]
   }
 ];
+
+export default jobs;

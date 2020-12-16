@@ -22,7 +22,7 @@ const Navbar = ({ toggleSidebar }) => {
       <div className='nav-center'>
         <div className='nav-header'>
           <ReactRouterLink to='/'>
-            <a href='' className='logo'>
+            <a href='/' className='logo'>
               <span className='grey-color'> &lt;</span>
               <span className='logo-name'>Rishi Gupta</span>
               <span className='grey-color'>/&gt;</span>

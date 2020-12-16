@@ -2,8 +2,8 @@ import React from 'react';
 import {
   FaFacebookSquare,
   FaLinkedin,
-  FaDribbbleSquare,
-  FaBehanceSquare,
+  // FaDribbbleSquare,
+  // FaBehanceSquare,
   FaTwitterSquare
 } from 'react-icons/fa';
 import './socialLinks.css';
@@ -42,15 +42,21 @@ const links = data.map((link) => {
 
   return (
     <li key={link.id}>
-      <a className='social-link' onClick={() => onClickHandler(link.url)}>
+      <a
+        className='social-link'
+        onClick={() => onClickHandler(link.url)}
+        href='/'
+      >
         {link.icon}
       </a>
     </li>
   );
 });
 
-export default ({ styleClass }) => {
+const SocialLinks = ({ styleClass }) => {
   return (
     <ul className={`social-links ${styleClass ? styleClass : ''}`}>{links}</ul>
   );
 };
+
+export default SocialLinks;

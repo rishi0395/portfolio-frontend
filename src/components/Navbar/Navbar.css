@@ -53,6 +53,29 @@
   display: none;
 }
 
+.nav-header .logo {
+  display: block;
+  flex: none;
+  float: left;
+  font-size: 2em;
+  text-decoration: none;
+  margin-top: 10px;
+  line-height: normal;
+}
+
+.nav-header .logo-name {
+  font-family: 'Agustina Regular';
+  font-weight: bold;
+  font-variant-ligatures: no-common-ligatures;
+  -webkit-font-variant-ligatures: no-common-ligatures;
+  padding: 0 10px;
+  color: var(--clr-grey-1);
+}
+
+.grey-color {
+  color: var(--clr-grey-1);
+}
+
 @media screen and (min-width: 768px) {
   .toggle-btn {
     display: none;
@@ -94,25 +117,12 @@
   }
 }
 
-.nav-header .logo {
-  display: block;
-  flex: none;
-  float: left;
-  font-size: 2em;
-  text-decoration: none;
-  margin-top: 10px;
-  line-height: normal;
-}
+@media only screen and (max-width: 600px) {
+  .navbar {
+    height: 3rem;
+  }
 
-.nav-header .logo-name {
-  font-family: 'Agustina Regular';
-  font-weight: bold;
-  font-variant-ligatures: no-common-ligatures;
-  -webkit-font-variant-ligatures: no-common-ligatures;
-  padding: 0 10px;
-  color: var(--clr-grey-1);
-}
-
-.grey-color {
-  color: var(--clr-grey-1);
+  .nav-header .logo {
+    font-size: 1.3rem;
+  }
 }

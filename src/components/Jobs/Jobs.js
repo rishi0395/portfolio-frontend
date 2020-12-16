@@ -8,7 +8,7 @@ import jobs from '../../constants/jobs';
 const Jobs = () => {
   const [value, setValue] = useState(0);
 
-  const { companyShortFrom, company, position, date, desc = [] } = jobs[value];
+  const { company, position, date, desc = [] } = jobs[value];
 
   return (
     <section className='section jobs'>

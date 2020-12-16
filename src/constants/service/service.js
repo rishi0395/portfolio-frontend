@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaCode, FaSketch, FaAndroid } from 'react-icons/fa';
-export default [
+const services = [
   {
     id: 1,
     icon: <FaCode className='service-icon' />,
@@ -20,3 +20,5 @@ export default [
     text: `iOS designers, Android designers - Work closely with user experience (UX) designers and user interface (UI) designers to apply their designs to mobile interfaces.`
   }
 ];
+
+export default services;

@@ -72,3 +72,11 @@
 .contact-info {
   margin-top: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  .contact-page {
+    position: relative;
+    padding: 3rem 0 !important;
+    top: -2.3rem;
+  }
+}

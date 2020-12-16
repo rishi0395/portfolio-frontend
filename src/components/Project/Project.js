@@ -6,9 +6,11 @@ import './Project.css';
 const Project = ({ description, title, github, stack, url, image, index }) => {
   return (
     <article className='project'>
-      {image && <img src={image} className='project-img' />}
+      {image && <img src={image} className='project-img' alt='#' />}
       <div className='project-info'>
-        <span className='project-number'>0{index + 1}.</span>
+        <span className='project-number'>
+          {index < 9 ? `0${index + 1}.` : `${index + 1}.`}
+        </span>
         <h3>{title || 'default title'}</h3>
         <p className='project-desc'>{description}</p>
         <div className='project-stack'>
@@ -17,10 +19,24 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
           })}
         </div>
         <div className='project-links'>
-          <a href={github}>
+          <a
+            href=''
+            rel='noopener noreferrer'
+            onClick={(e) => {
+              e.preventDefault();
+              github && window.open(github);
+            }}
+          >
             <FaGithubSquare className='project-icon' />
           </a>
-          <a href={url}>
+          <a
+            href=''
+            rel='noopener noreferrer'
+            onClick={(e) => {
+              e.preventDefault();
+              url && window.open(url);
+            }}
+          >
             <FaShareSquare className='project-icon' />
           </a>
         </div>

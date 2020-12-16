@@ -9,7 +9,6 @@ const Footer = () => {
         <SocialLinks styleClass='footer-links'></SocialLinks>
         <h4>Are you interested in working with me or just have a question?</h4>
         <h4>
-          {' '}
           Email me at &nbsp;
           <a
             href='mailto:guptarishi013@gmail.com'

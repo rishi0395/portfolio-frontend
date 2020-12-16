@@ -35,8 +35,8 @@ const PopupContainer = styled.div`
   z-index: 9999;
   opacity: ${({ visible }) => (visible ? 1 : 0)};
   visibility: ${({ visible }) => (visible ? 'visible' : 'hidden')};
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 
   @supports (
     (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))

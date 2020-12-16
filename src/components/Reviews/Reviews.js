@@ -26,7 +26,7 @@ const Slider = ({ reviews }) => {
       <div className='section-center'>
         {reviews &&
           reviews.map((review, reviewIndex) => {
-            const { image, name, designation, message } = review;
+            const { name, designation, message } = review;
 
             let position = 'nextSlide';
             if (reviewIndex === index) {
@@ -43,7 +43,7 @@ const Slider = ({ reviews }) => {
             }
             return (
               <article className={position} key={reviewIndex}>
-                <img src={Review} className='img'></img>
+                <img src={Review} className='img' alt='#'></img>
                 <h4>{name}</h4>
                 <p className='title'>{designation}</p>
                 <div>

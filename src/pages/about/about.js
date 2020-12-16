@@ -6,7 +6,7 @@ import './about.css';
 import Image from './ManOnTable';
 
 const About = () => {
-  const { info, stack, title, image, moreInfo, otherInfo } = nodes;
+  const { info, stack, title, moreInfo, otherInfo } = nodes;
 
   return (
     <Layout>

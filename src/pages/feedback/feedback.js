@@ -23,6 +23,7 @@ const Feedback = () => {
   useEffect(() => {
     if (reviews.length === 0) {
       axios.get('/api/feedbackSync').then((res) => {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         dispatch({
           type: STORE_FEEDBACK,
           payload: res.data
@@ -38,6 +39,7 @@ const Feedback = () => {
 
     var channel = pusher.subscribe('feedbackcontent');
     channel.bind('inserted', function (newFeedback) {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       dispatch({
         type: UPDATE_FEEDBACK,
         payload: newFeedback

@@ -6,18 +6,6 @@ import './Jumbotron.css';
 import FeelingProud from './FeelingProud';
 
 const Jumbotron = () => {
-  const theme = {
-    body: '#EDF9FE',
-    compImgHighlight: '#E6E6E6',
-    dark: '#00072D',
-    headerColor: '#0E6BA877',
-    highlight: '#A6E1FA',
-    imageHighlight: '#0E6BA8',
-    jacketColor: '#0A2472',
-    secondaryText: '#7F8DAA',
-    text: '#001C55'
-  };
-
   return (
     <header className='jumbotron'>
       <div className='section-center jumbotron-center'>
@@ -36,7 +24,7 @@ const Jumbotron = () => {
             <SocialLinks />
           </div>
         </article>
-        <FeelingProud theme={theme} className='jumbotron-img' />
+        <FeelingProud className='jumbotron-img' />
       </div>
     </header>
   );

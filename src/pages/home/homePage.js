@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Service from '../../components/Service';
 import Jumbotron from '../../components/Jumbotron';
 import Jobs from '../../components/Jobs/Jobs';
@@ -34,18 +34,20 @@ function Home() {
   }, []);
 
   return (
-    <Layout>
-      <Jumbotron />
-      <Service />
-      <Jobs />
-      <Skills />
-      <Projects
-        projects={projects.slice(0, 2)}
-        title='featured projects'
-        showLink
-      />
-      <Reviews reviews={reviews} />
-    </Layout>
+    <>
+      <Layout>
+        <Jumbotron />
+        <Service />
+        <Jobs />
+        <Skills />
+        <Projects
+          projects={projects.slice(0, 2)}
+          title='featured projects'
+          showLink
+        />
+        <Reviews reviews={reviews} />
+      </Layout>
+    </>
   );
 }
 

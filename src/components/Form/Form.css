@@ -57,3 +57,9 @@
   font-weight: 700;
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 600px) {
+  .form-control::placeholder {
+    font-size: small;
+  }
+}

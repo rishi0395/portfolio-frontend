@@ -3,7 +3,17 @@ import './Jumbotron.css';
 
 class FeelingProud extends Component {
   render() {
-    const theme = this.props.theme;
+    const theme = {
+      body: '#EDF9FE',
+      compImgHighlight: '#E6E6E6',
+      dark: '#00072D',
+      headerColor: '#0E6BA877',
+      highlight: '#A6E1FA',
+      imageHighlight: '#0E6BA8',
+      jacketColor: '#0A2472',
+      secondaryText: '#7F8DAA',
+      text: '#001C55'
+    };
     return (
       <svg
         id='b52d7e2d-d80f-4111-b6ed-d15502ee1edd'

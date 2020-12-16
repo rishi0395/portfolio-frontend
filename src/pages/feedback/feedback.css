@@ -5,3 +5,9 @@
 .feedback-layout {
   background: var(--clr-primary-5);
 }
+
+@media only screen and (max-width: 600px) {
+  .feedback-layout {
+    padding: 3rem 0 !important;
+  }
+}

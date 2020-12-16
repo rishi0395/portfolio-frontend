@@ -16,7 +16,7 @@ export default class ManOnTable extends Component {
         id='bfc59778-adb9-4ded-81d5-12977ec092f3'
         data-name='Layer 1'
         xmlns='http://www.w3.org/2000/svg'
-        xmlns='http://www.w3.org/1999/xlink'
+        xlink='http://www.w3.org/1999/xlink'
         width='996.46'
         height='828.18'
         viewBox='0 0 996.46 828.18'

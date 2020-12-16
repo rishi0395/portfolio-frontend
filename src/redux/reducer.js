@@ -9,7 +9,8 @@ export const initialState = {
   //     _id: '5fb403574e5222531eafa66a',
   //     name: 'RISHI GUPTA',
   //     email: 'guptarishi013@gmail.com',
-  //     message: 'cdcdcdcd',
+  //     message:
+  //       'cdcdcdcdMedia queries can also be used to change layout of a page depending on the orientation of the browser',
   //     company: 'iit delhi',
   //     designation: 'cdcdcdcdc',
   //     createdAt: '2020-11-17T17:07:35.764Z',

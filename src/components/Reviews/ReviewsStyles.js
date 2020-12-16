@@ -35,11 +35,12 @@ export const Wrapper = styled.div`
     .text {
       max-width: 45em;
       margin: 0 auto;
-      line-height: 2;
+      line-height: 1;
+      font-size: 2rem;
       color: var(--clr-grey-5);
     }
     .icon {
-      font-size: 3rem;
+      font-size: 2rem;
       margin-top: 1rem;
       color: var(--clr-primary-5);
     }
@@ -96,6 +97,33 @@ export const Wrapper = styled.div`
     }
     article.nextSlide {
       transform: translateX(100%);
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .section-center .img {
+      width: 35%;
+    }
+
+    .section-center .title {
+      margin-bottom: 1.5rem;
+    }
+    .section-center .text {
+      overflow-y: scroll;
+      max-height: 9rem;
+      font-size: medium;
+      max-width: 15rem;
+      /* border: 0.5px solid var(--clr-grey-5); */
+      border-radius: 1rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      background: var(--clr-grey-9);
+      line-height: initial;
+    }
+    .center-btn {
+      margin-top: auto;
+    }
+    .icon {
+      margin-top: 1rem !important;
     }
   }
 `;
