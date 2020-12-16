@@ -18,7 +18,16 @@ const Jumbotron = () => {
             <ReactRouterLink to='/contact' className='btn'>
               contact me
             </ReactRouterLink>
-            <a href='/' className='btn btn-resume'>
+            <a
+              href='/'
+              className='btn btn-resume'
+              onClick={(e) => {
+                e.preventDefault();
+                window.open(
+                  'https://drive.google.com/file/d/11Wo0jDlxaIb9w0SgVUv_y7cS3LjWBQJn/view?usp=sharing'
+                );
+              }}
+            >
               See my Resume
             </a>
             <SocialLinks />

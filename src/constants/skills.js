@@ -21,7 +21,7 @@ export const skillValues = [
     skill: [
       {
         subTitle: 'NodeJS',
-        value: 75
+        value: 80
       },
       {
         subTitle: 'Express',
@@ -29,7 +29,7 @@ export const skillValues = [
       },
       {
         subTitle: 'Mongoose/MongoDB',
-        value: 75
+        value: 60
       }
     ]
   }
