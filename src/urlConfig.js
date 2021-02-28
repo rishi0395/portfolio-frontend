@@ -1,5 +1,5 @@
 export const api =
-  window.location.port === ''
+  window.location.port !== ''
     ? 'http://localhost:4000/'
     : 'http://api.rishiportfolio.tk/';
 
