@@ -22,7 +22,7 @@ const Feedback = () => {
 
   useEffect(() => {
     if (reviews.length === 0) {
-      axios.get('/api/feedbackSync').then((res) => {
+      axios.get('/feedbackSync').then((res) => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
         dispatch({
           type: STORE_FEEDBACK,
@@ -105,7 +105,7 @@ const Feedback = () => {
     e.preventDefault();
 
     axios
-      .post('/api/feedbackSubmit', {
+      .post('/feedbackSubmit', {
         message,
         name,
         designation,

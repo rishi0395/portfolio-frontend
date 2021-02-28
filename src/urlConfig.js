@@ -1,7 +1,7 @@
 export const api =
-  window.location.port !== ''
+  window.location.port === ''
     ? 'http://localhost:4000/'
-    : 'https://rishi-portfolio-backend3.herokuapp.com/';
+    : 'http://api.rishiportfolio.tk/';
 
 export const generatePublicUrl = (fileName) => {
   return `http://localhost:4000/public/${fileName}`;

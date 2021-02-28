@@ -1,1 +1,1 @@
-export const feedbackSyncUrl = '/api/feedbackSync';
+export const feedbackSyncUrl = '/feedbackSync';

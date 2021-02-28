@@ -17,7 +17,7 @@ function Home() {
   useEffect(() => {
     if (reviews.length === 0) {
       axios
-        .get('/api/feedbackSync')
+        .get('/feedbackSync')
         .then((res) => {
           dispatch({
             type: STORE_FEEDBACK,

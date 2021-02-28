@@ -41,7 +41,7 @@ const Contact = () => {
   const onSubmitHandler = (e) => {
     e.preventDefault();
     axios
-      .post('/api/mailsend', {
+      .post('/mailsend', {
         name,
         email,
         message
